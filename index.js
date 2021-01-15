@@ -31,7 +31,7 @@ app.use(express.static("public"));
 app.use("/", allRoutes);
 
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/repertoire-recipes",
+  process.env.MONGODB_URI || "mongodb://localhost/Repertoire-Recipes",
   {
     useNewUrlParser: true,
   }
