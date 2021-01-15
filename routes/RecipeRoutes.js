@@ -4,46 +4,57 @@ const mongoose = require("mongoose");
 
 const db = require("../models");
 
-//Review routes
-//GET all reviews
-router.get("/review", (req, res) => {
-  db.Review.find({})
-    .then((dbReview) => {
-      console.dir(dbReview);
-      res.json(dbReview);
+//GET all recipes
+router.get("/recipe", (req, res) => {
+  db.Recipe.find({})
+    .then((dbRecipe) => {
+      console.dir(dbRecipe);
+      res.json(dbRecipe);
     })
     .catch((err) => {
       res.json(err);
     });
 });
 
-//CREATE a review
-router.post("/newreview", (req, res) => {
-  db.Review.create(req.body)
-    .then((dbReview) => {
-      res.json(dbReview);
+//GET one recipes by id
+router.get("/recipe/:id", (req, res) => {
+  db.Recipe.find({})
+    .then((dbRecipe) => {
+      console.dir(dbRecipe);
+      res.json(dbRecipe);
     })
     .catch((err) => {
       res.json(err);
     });
 });
 
-//UPDATE a review
-router.put("/review/:id", (req, res) => {
-  db.Review.findByIdAndUpdate(req.params.id, req.body)
-    .then((dbReview) => {
-      res.json(dbReview);
+//CREATE a recipe
+router.post("/newrecipe", (req, res) => {
+  db.Recipe.create(req.body)
+    .then((dbRecipe) => {
+      res.json(dbRecipe);
     })
     .catch((err) => {
       res.json(err);
     });
 });
 
-//DELETE a review
-router.delete("/review/:id", (req, res) => {
-  db.Review.deleteOne({ _id: req.params.id })
-    .then((dbReview) => {
-      res.json(dbReview);
+//UPDATE a recipe
+router.put("/recipe/:id", (req, res) => {
+  db.Recipe.findByIdAndUpdate(req.params.id, req.body)
+    .then((dbRecipe) => {
+      res.json(dbRecipe);
+    })
+    .catch((err) => {
+      res.json(err);
+    });
+});
+
+//DELETE a recipe
+router.delete("/recipe/:id", (req, res) => {
+  db.Recipe.deleteOne({ _id: req.params.id })
+    .then((dbRecipe) => {
+      res.json(dbRecipe);
     })
     .catch((err) => {
       res.json(err);
