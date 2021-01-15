@@ -17,7 +17,7 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "https://truckntastyfood.herokuapp.com",
+      "https://repertoire-recipes.herokuapp.com/",
       "http://localhost:3001",
       "http://localhost:3000",
     ],
