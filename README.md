@@ -4,7 +4,11 @@
 
 ## **Description**
 
-> This is the back end for Repertoire Recipes (https://github.com/PatCeriale/repertoire-recipes).
+> This is the back end for Repertoire Recipes!
+
+GitHub: https://github.com/PatCeriale/repertoire-recipes
+
+Deployed Link: https://repertoire-recipes-back-end.herokuapp.com/
 
 ## **Table of Contents**
 
