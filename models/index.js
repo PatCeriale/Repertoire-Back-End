@@ -1,5 +1,5 @@
 module.exports = {
-  Recipe: require("./RecipeModel.js"),
+  Recipe: require("./Recipe.js"),
   // User: require("./userModel.js"),
   // Vendor: require("./vendorModel")
 };
