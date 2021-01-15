@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const db = require("../models");
 
 //GET all recipes
-router.get("/recipe", (req, res) => {
+router.get("/recipelist", (req, res) => {
   db.Recipe.find({})
     .then((dbRecipe) => {
       console.dir(dbRecipe);
