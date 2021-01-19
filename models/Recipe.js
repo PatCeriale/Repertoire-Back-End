@@ -5,12 +5,11 @@ const RecipeSchema = new Schema({
   title: String,
   description: String,
   image: String,
-  ingredients: [
-    {
-      type: String,
-    },
-  ],
-  instructions: String,
+  preptime: Number,
+  cookime: Number,
+  servingsize: Number,
+  ingredients: [{ type: String }],
+  instructions: [{ type: String }],
   tags: String,
   recipeCreated: {
     type: Date,
