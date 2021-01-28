@@ -10,6 +10,8 @@ const RecipeSchema = new Schema({
   servingsize: Number,
   ingredients: [{ type: String }],
   instructions: [{ type: String }],
+  course: String,
+  // Breakfast/Lunch/Dinner
   tags: String,
   recipeCreated: {
     type: Date,
