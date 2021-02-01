@@ -8,7 +8,7 @@ const RecipeSchema = new Schema({
   preptime: Number,
   cookime: Number,
   servingsize: Number,
-  ingredients: [{ type: String }],
+  ingredients: [{ type: String, amount: String }],
   instructions: [{ type: String }],
   course: String,
   // Breakfast/Lunch/Dinner

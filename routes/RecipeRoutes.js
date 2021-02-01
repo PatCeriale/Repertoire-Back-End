@@ -29,7 +29,7 @@ router.get("/recipe/:id", (req, res) => {
 });
 
 //CREATE a recipe
-router.post("/newrecipe", (req, res) => {
+router.post("/addnewrecipe", (req, res) => {
   db.Recipe.create(req.body)
     .then((dbRecipe) => {
       res.json(dbRecipe);
